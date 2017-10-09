@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zadanie 2</title>
+    <link rel="stylesheet" href="../stylesheet/main.css">
+  </head>
+
+  <body>
+
+    <div class="container" ng-app="myApp">
+
+    <div class="box-container">
+      <h3 class="header">Zadanie 2</h3>
+      <div class="box">
+        <form name="ValidationForm">
+          <h5>Popraw kod tak aby byl sprawdzany warunek czy w elemencie typu input jest jakas zawartosc i zwracal wartosc true lub false</h5>
+
+          <h5>
+            <span id="output">
+              {{ValidationForm.$valid}}
+            </span>
+          </h5>
+
+          <input
+            name="ValidationInput"
+            ng-model="Validation"
+            placeholder="Wpisz jakis tekst"
+            required>
+
+        </form>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+    </script>
+
+    <script src="AngularJS/custom.js">
+    </script>
+
+  </body>
+
+</html>

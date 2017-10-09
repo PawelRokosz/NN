@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zadanie 2</title>
+    <link rel="stylesheet" href="stylesheet/main.css">
+  </head>
+
+  <body>
+
+<div class="container" ng-app="myApp">
+
+  <div class="box-container" ng-app="ShopingListApp" ng-controller="ShopingListCtrl">
+    <h3 class="header">Lista</h3>
+    <div class="box">
+      <ul>
+        <li class="list" ng-repeat="x in products">
+          <p>{{x}}
+            <span class="remove-item" ng-click="removeItem($index)">&times;</span>
+          </p>
+        </li>
+        <li>
+          <div class="spacer"></div>
+          <input ng-model="addProduct" placeholder="Wpisz cos">
+          <button class="btn-input" ng-click="addItem()">+</button>
+          <p>{{errortext}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+</script>
+
+<script src="AngularJS/custom.js">
+</script>
+
+  </body>
+
+</html>
